@@ -1,4 +1,5 @@
 #include "cli.h"
+#include "uart_win.h"
 #include <windows.h>
 
 static HANDLE hStdout = INVALID_HANDLE_VALUE;
@@ -19,14 +20,13 @@ static cli_callback_t ctrl_c_handler = NULL;
 
 void cliInit(void)
 {
-    hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
-    
     cli_line_idx = 0;
     cli_cursor = 0;
     ctrl_c_handler = NULL;
 
-    cliPrintf("\r\n======================================\r\n");
+    cliPrintf("\r\n===============================================\r\n");
     cliPrintf("   MSVC Windows Console CLI Terminal v0.1\r\n");
+    cliPrintf("\r\n===============================================\r\n");
 
     cliPrintf("CLI> ");
 }
@@ -43,11 +43,9 @@ void cliPrintf(char *fmt, ...)
     va_start(args, fmt);
     len = vsnprintf(buf, sizeof(buf), fmt, args);
     va_end(args);
-    if(len>0)
+    if (len > 0)
     {
-        DWORD written = 0;
-        WriteConsoleA(hStdout, (uint8_t*)buf, (DWORD)len, &written, NULL);
-        // (unit8_t*)buf
+        uartWrite(0, (uint8_t *)buf, (uint32_t)len);
     }
 }
 

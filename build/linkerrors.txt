@@ -1,11 +1,11 @@
 ================================================================================
 Linker Errors
-Generated: 2026-08-07T02:49:20.908Z
+Generated: 2026-08-07T05:52:20.018Z
 Total Errors: 2
 ================================================================================
 
 [LNK2019] (MSVC)
-unresolved external symbol cliMain referenced in function appMain [C:\Users\kccistc\msvc-project\build\msvc_cli.vcxproj]
+unresolved external symbol uartWrite referenced in function cliPrintf [C:\Users\kccistc\msvc-project\build\msvc_cli.vcxproj]
 
 [LNK1120] (MSVC)
 1 unresolved externals [C:\Users\kccistc\msvc-project\build\msvc_cli.vcxproj]

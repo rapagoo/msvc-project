@@ -1,0 +1,3 @@
+C:/Users/kccistc/msvc-project/build/CMakeFiles/msvc_cli.dir
+C:/Users/kccistc/msvc-project/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/kccistc/msvc-project/build/CMakeFiles/ZERO_CHECK.dir

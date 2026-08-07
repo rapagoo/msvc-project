@@ -1,0 +1,10 @@
+^C:\USERS\KCCISTC\MSVC-PROJECT\BUILD\CMAKEFILES\131672F6EA43EEB46CDBDC292AC43F61\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/kccistc/msvc-project -BC:/Users/kccistc/msvc-project/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/kccistc/msvc-project/build/msvc_cli.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

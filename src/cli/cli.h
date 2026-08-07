@@ -9,6 +9,12 @@
 #define CLI_CMD_ARG_MAX 16
 #define CLI_HIST_MAX 10
 typedef void (*cli_callback_t)(void);
+typedef enum
+{
+    CLI_STATE_NORMAL = 0,
+    CLI_STATE_ESC_RCVD,
+    CLI_STATE_BRACKET_RCVD
+} cli_input_state_t;
 
 void cliInit(void);
 void cliMain(void);

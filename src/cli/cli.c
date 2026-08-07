@@ -2,18 +2,9 @@
 #include "uart_win.h"
 #include <windows.h>
 
-static HANDLE hStdout = INVALID_HANDLE_VALUE;
-
 static char cli_line_buf[CLI_LINE_BUF_MAX];
 static uint16_t cli_line_idx = 0;
 static uint16_t cli_cursor = 0;
-
-typedef enum
-{
-    CLI_STATE_NORMAL = 0,
-    CLI_STATE_ESC_RCVD,
-    CLI_STATE_BRACKET_RCVD
-} cli_input_state_t;
 
 static cli_input_state_t input_state = CLI_STATE_NORMAL;
 static cli_callback_t ctrl_c_handler = NULL;
@@ -24,9 +15,8 @@ void cliInit(void)
     cli_cursor = 0;
     ctrl_c_handler = NULL;
 
-    cliPrintf("\r\n===============================================\r\n");
-    cliPrintf("   MSVC Windows Console CLI Terminal v0.1\r\n");
-    cliPrintf("\r\n===============================================\r\n");
+    cliPrintf("\r\n=================================\r\n");
+    cliPrintf("   MSVC Windows Console CLI Terminal V0.1\r\n");
 
     cliPrintf("CLI> ");
 }

@@ -7,6 +7,9 @@
     <ClCompile Include="C:\Users\kccistc\msvc-project\src\cli\cli.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\kccistc\msvc-project\src\hw\driver\uart_win.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\kccistc\msvc-project\src\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>

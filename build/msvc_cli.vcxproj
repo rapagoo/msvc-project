@@ -374,6 +374,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClCompile Include="C:\Users\kccistc\msvc-project\src\app\app.c" />
     <ClCompile Include="C:\Users\kccistc\msvc-project\src\cli\cli.c" />
+    <ClCompile Include="C:\Users\kccistc\msvc-project\src\hw\driver\uart_win.c" />
     <ClCompile Include="C:\Users\kccistc\msvc-project\src\main.c" />
   </ItemGroup>
   <ItemGroup />

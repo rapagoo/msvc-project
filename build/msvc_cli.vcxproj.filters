@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\kccistc\msvc-project\src\app\app.c">
+    <ClCompile Include="C:\bootcamp\msvc-project\src\app\app.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kccistc\msvc-project\src\cli\cli.c">
+    <ClCompile Include="C:\bootcamp\msvc-project\src\cli\cli.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kccistc\msvc-project\src\hw\driver\uart_win.c">
+    <ClCompile Include="C:\bootcamp\msvc-project\src\hw\driver\uart_win.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kccistc\msvc-project\src\main.c">
+    <ClCompile Include="C:\bootcamp\msvc-project\src\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\kccistc\msvc-project\CMakeLists.txt" />
+    <CustomBuild Include="C:\bootcamp\msvc-project\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{C26104E8-C71E-332E-A3CF-595E60223A96}</UniqueIdentifier>
+      <UniqueIdentifier>{2C9811E6-8C87-37E2-827C-022844FC7A52}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
